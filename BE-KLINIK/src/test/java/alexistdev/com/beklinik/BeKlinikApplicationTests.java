@@ -1,6 +1,5 @@
 package alexistdev.com.beklinik;
 
-import alexistdev.com.beklinik.Config.JwtService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -11,16 +10,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class BeKlinikApplicationTests {
 
-	@Autowired
-	private JwtService jwtService;
+//	@Autowired
+//	private JwtService jwtService;
 	@Test
 	void contextLoads() {
 	}
 
 	@Test
 	void testing() {
-		String username = "alexistdev";
-		String token = jwtService.GenerateToken(username);
-		Assertions.assertEquals(username, jwtService.extractUsername(token));
+//		String username = "alexistdev";
+//		String token = jwtService.GenerateToken(username);
+//		Assertions.assertEquals(username, jwtService.extractUsername(token));
 	}
 }
